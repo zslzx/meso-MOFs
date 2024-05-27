@@ -148,8 +148,7 @@ if __name__ == '__main__':
     rgr_model = RGRModel().cuda()
     rgr_model.load_state_dict(torch.load('rgr_model.pt'))
 
-    # find_input_by_grident(cls_model, rgr_model, target=6)
-    find_input_by_grid_search(cls_model, rgr_model, target=6)
+    find_input_by_grid_search(cls_model, rgr_model, target=6) #set target I(111)/I(002) value, find some candidate conditions.
     
 
     
